@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<button id="show"> Show</button>
+	<button id="hide">Hide</button>
+	<button id="toggle">Toggle</button>
+	<div id="div1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		
+	</div>
+
+	<script type="text/javascript">
+	$(function() {
+		$('#show').click(function(){
+			//$('#div1').show();
+			$('#div1').fadeIn();
+		})
+
+		$('#hide').click(function(){
+			//$('#div1').hide();
+			$('#div1').fadeOut();	
+		})
+		$('#toggle').click(function(){
+			//$('#div1').toggle();
+			//$('#div1').fadeToggle();
+			$('#div1').slideToggle();
+		
+		})
+	})
+
+	</script>
+
+</body>
+</html>
